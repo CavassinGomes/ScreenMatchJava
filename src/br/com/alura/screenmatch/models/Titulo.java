@@ -8,6 +8,15 @@ public class Titulo {
     private int numRatings;
     private int timeInMin;
 
+    public Titulo(){
+
+    }
+
+    public Titulo(String name, int release) {
+        this.name = name;
+        this.release = release;
+    }
+
     public String getName() {
         return name;
     }

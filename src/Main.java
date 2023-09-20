@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Film myFilm = new Film();
+        Film myFilm = new Film("The GodFather", 1972);
         myFilm.setName("The GodFather");
         myFilm.setRelease(1972);
         myFilm.setTimeInMin(175);
@@ -22,10 +22,7 @@ public class Main {
         System.out.println("Total de avaliações: " + myFilm.getNumRatings());
         System.out.println(myFilm.average());
 
-        Serie lost = new Serie();
-
-        lost.setName("Lost");
-        lost.setRelease(2000);
+        Serie lost = new Serie("Lost", 2000);
         lost.showDataSheet();
         lost.setSeasons(10);
         lost.setEpisodesBySeasons(10);
@@ -52,10 +49,8 @@ public class Main {
         episode.setTotalViews(300);
         filter.filter(episode);
 
-        var filmP = new Film();
+        var filmP = new Film("Dogville", 2003);
         filmP.setTimeInMin(200);
-        filmP.setName("Dogville");
-        filmP.setRelease(2003);
         filmP.rate(10);
 
         ArrayList<Film> filmList = new ArrayList<>();
@@ -64,6 +59,9 @@ public class Main {
         filmList.add(outroFilme);
         System.out.println("Tamanho da lista: " + filmList.size());
         System.out.println("Primeiro filme: " + filmList.get(0).getName());
-        
+        System.out.println("toString do filme: " + filmList.toString());
+
+
+
     }
 }
