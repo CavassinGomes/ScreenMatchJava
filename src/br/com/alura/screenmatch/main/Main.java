@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.main;
+
 import br.com.alura.screenmatch.calculation.Recommendation;
 import br.com.alura.screenmatch.calculation.TimeCalculator;
 import br.com.alura.screenmatch.models.Episode;
@@ -29,7 +31,7 @@ public class Main {
         lost.setMinutesByEpisodes(50);
         System.out.println("Duração total do filme: " + lost.getTimeInMin());
 
-        Film outroFilme = new Film();
+        Film outroFilme = new Film("Avatar", 2023);
         outroFilme.setName("Avatar");
         outroFilme.setRelease(2023);
         outroFilme.setTimeInMin(200);
